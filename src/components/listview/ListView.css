@@ -1,0 +1,26 @@
+.list-container{
+    display: grid;
+    grid-template-columns:1fr;
+    
+    /* width:100%; */
+}
+.single-list{
+    display: grid;
+    grid-template-columns: 11fr 1fr;
+    background-color: gray ;
+    /* width: 100%; */
+    margin: 10px;
+}
+.summary{
+   white-space: nowrap;
+   /* height: inherit; */
+   width: 595px;
+        overflow: hidden;
+        text-overflow:ellipsis;
+}
+.title{
+    width: 595px;
+    white-space: wrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+}

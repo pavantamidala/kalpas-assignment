@@ -1,23 +1,17 @@
-import logo from './logo.svg';
+import React,{useState} from 'react'
 import './App.css';
+import Content from './components/content/content'
+import useFetch from './hooks/useFetch';
 
 function App() {
+  const [listView,setListView] = useState(true)
+  const [offset,setOffSet] = useState(0)
+  const [data, setData] = useState([])
+  
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <Content listView={listView} setListView = {setListView} offset={offset} data={data} setData={setData} />
+
     </div>
   );
 }
