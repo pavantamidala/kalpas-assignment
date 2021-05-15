@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="App">
     <Content listView={listView} setListView = {setListView} offset={offset} data={data} setData={setData} />
-
+    
     </div>
   );
 }

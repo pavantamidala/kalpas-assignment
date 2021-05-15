@@ -13,10 +13,11 @@ function Content(props) {
             </div>
             <div className="main">
 
-            {
-                props.listView ? <ListView data={props.data} /> : <CardView data={props.data} />
-            }
-           
+             {
+                    props.listView ? <ListView setData={props.setData} data={props.data} /> : <CardView setData={props.setData} data={props.data} />
+            } 
+                
+                
             </div>
         </div>
     )
