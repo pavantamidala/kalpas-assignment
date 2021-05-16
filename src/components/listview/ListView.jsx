@@ -1,5 +1,8 @@
 import React from 'react'
 import './ListView.css';
+import { GiCancel } from 'react-icons/gi'
+import {IconContext} from 'react-icons';
+
 function ListView(props) {
     console.log("list view")
     console.log(props.data.length)
@@ -26,12 +29,16 @@ function ListView(props) {
                                 <span className="date"> {obj.published} </span>
                                 </div>
                             </div>
-                            <div className="close"> <button onClick={(e) => removePost(obj.id)}>Close</button> </div>
+                            <div className="close">
+                                <IconContext.Provider value={{ size: "20px" }}>
+                                    <GiCancel onClick={(e) => removePost(obj.id)} />
+                                </IconContext.Provider> </div>
                             <p className="none"> {random = random + 1} </p>
                         </div>
                     )
                 })
             }
+            
         </div>
     )
 }

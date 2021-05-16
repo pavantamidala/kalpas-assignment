@@ -1,0 +1,27 @@
+*{
+    box-sizing: border-box;
+}
+.icons-container{
+    background: #FFFFFF;
+    box-shadow: 0px 8px 28px -6px rgba(24, 39, 75, 0.12), 0px 18px 88px -4px rgba(24, 39, 75, 0.14);
+    border-radius: 8px;
+    /* max-width: 200px; */
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: minmax(120px,200px);
+    height: 70px;
+    text-align: center;
+    align-self: flex-start;
+}
+.icons{
+    /* width: 100px;
+height: 78px; */
+grid-row-start:2;
+justify-self: center;
+    padding:10px;
+    padding-bottom: 0px;
+    margin-bottom: 2px;
+    background-color: #EBF2F7;
+}
