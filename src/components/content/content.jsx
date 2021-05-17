@@ -11,7 +11,7 @@ import axios from 'axios'
 import { useState } from 'react'
 
 function Content(props) {
-    debugger
+    
     const [loader,setLoader] = useState(true) 
     // useFetch(props.offset,props.setData)
     useEffect(() => {
