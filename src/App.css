@@ -12,7 +12,7 @@ backdrop-filter: blur(2px) !important;
 .ReactModal__Content{
   background: #EBF2F7 !important;
 box-shadow: 0px 8px 28px -6px rgba(24, 39, 75, 0.12), 0px 18px 88px -4px rgba(24, 39, 75, 0.14) !important;
-border-radius: 0px 32px 32px 0px !important;
+/* border-radius: 0px 32px 32px 0px !important; */
 }
 .MuiFormControl-root{
   background-color: white;
@@ -25,4 +25,7 @@ border-radius: 0px 32px 32px 0px !important;
 .first-name{
   margin-right: 10px;
   margin-bottom: 15px;
+}
+.close-cancel{
+  margin-right: 0px;
 }

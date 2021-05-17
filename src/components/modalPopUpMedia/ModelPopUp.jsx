@@ -1,6 +1,8 @@
 import Modal from 'react-modal';
 import React, { useState, useEffect } from 'react';
 import axios from 'axios'
+import { IconContext } from "react-icons";
+import { GiCancel } from 'react-icons/gi';
 
 const customStyles = {
     content: {
@@ -47,6 +49,11 @@ function ModalApp(props) {
             >
 
                 <div ref={_subtitle => (subtitle = _subtitle)}>
+                </div>
+                <div className="remove-card-post" style={{textAlign:"end"}}>
+                    <IconContext.Provider value={{ size: "20px" }}>
+                        <GiCancel onClick={closeModal} />
+                    </IconContext.Provider>
                 </div>
                 <iframe style={{width:"100%",height:"100%"}} src={props.link} title={props.link} ></iframe>
 

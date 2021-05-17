@@ -2,6 +2,7 @@
  overflow:auto;
     height: 100%;
     /* border: 1px solid #ccc; */
+    margin-top: 13px;
 }
 .single-lists{
     display: grid;
@@ -16,7 +17,7 @@
   grid-auto-rows: none ;
    background-color:#FFFFFF;
    padding: 12px;
-
+   border-radius: 16px;
 }
  .list-summary{
    white-space:nowrap;

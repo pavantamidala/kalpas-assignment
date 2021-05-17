@@ -6,7 +6,7 @@
     grid-template-columns: repeat(auto-fit,minmax(200px,250px));
     height: 100%;
     overflow: auto;
-    
+    margin-top: 10px;
 }
 .card-view{
     display: grid;
@@ -16,7 +16,12 @@
     padding: 8px;
     height: 224px;
 }
-
+.remove-card-post svg:hover{
+  color: red;
+}
+.close svg:hover{
+  color: red;
+}
 
 .card-image{
   width: 100%;
