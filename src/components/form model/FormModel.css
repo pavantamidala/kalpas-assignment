@@ -1,0 +1,19 @@
+.side-model{
+    display: grid;
+    grid-template-columns: 20% 75%;
+    grid-gap: 5%;
+    grid-auto-flow: column;
+    
+}
+
+.profile-container{
+    margin-bottom: 10px;
+    /* height: 100vh; */
+}
+.feedback-container{
+    /* align-self: center; */
+}
+.form-container-model{
+    /* height: 100vh; */
+    
+}

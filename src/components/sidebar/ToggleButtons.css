@@ -15,7 +15,9 @@
     text-align: center;
     align-self: flex-start;
 }
-.icons{
+
+
+.two-icons{
     /* width: 100px;
 height: 78px; */
 grid-row-start:2;

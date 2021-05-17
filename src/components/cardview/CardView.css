@@ -4,14 +4,19 @@
 .card-container{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(200px,250px));
+    height: 100%;
+    overflow: auto;
+    
 }
-.card{
+.card-view{
     display: grid;
     grid-template-rows: repeat(4,auto);
     background: #FFFFFF;
     margin: 17px;
     padding: 8px;
+    height: 224px;
 }
+
 
 .card-image{
   width: 100%;
@@ -19,13 +24,13 @@ height: 122px;
 margin-top: 3px;
 }
 .card-title{
-     white-space: pre;
+     white-space: nowrap;
         overflow: hidden;
         margin-bottom: 3px;
         text-overflow:ellipsis;
 }
 .card-summary{
-     white-space:pre;
+     white-space:nowrap;
         overflow: hidden;
         text-overflow:ellipsis;
         margin-top: 2px;
@@ -37,4 +42,7 @@ margin-top: 3px;
 
 .remove-card-post{
   justify-self: flex-end;
+}
+.main-content{
+  border-bottom: #ccc solid 1px;
 }
