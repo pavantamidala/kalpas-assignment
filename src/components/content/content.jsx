@@ -8,15 +8,20 @@ import Profile from '../sidebar/Profile';
 import Feedback from "../sidebar/Feedback";
 import ReactPaginate from 'react-paginate';
 import axios from 'axios'
+import { useState } from 'react'
 
 function Content(props) {
-    useFetch(props.offset,props.setData)
+    debugger
+    const [loader,setLoader] = useState(true) 
+    // useFetch(props.offset,props.setData)
     useEffect(() => {
 
         axios.get(`https://api.first.org/data/v1/news?limit=8&offset=${props.offset}`).then((res) => {
             
-            console.log(res.data.data)
+            
             props.setData(res.data.data)
+            
+            setLoader(false)
         })
     }, [props.offset, props.setData])
     function handleChange(obj){
@@ -37,6 +42,7 @@ function Content(props) {
                 <Feedback />
                 </div>
             </div>
+            {loader && <h1>Loading...</h1>}
             <div className="main-content">
 
              {
